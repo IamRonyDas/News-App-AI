@@ -43,16 +43,17 @@ app/src/main/java/com/example/news_app_kotlin/Constant/ApiKey.kt
 3. Build and run the app on Android Studio
 
 ## 📸 Screenshots
-![WhatsApp Image 2025-07-16 at 13 31 55_cfaf2978](https://github.com/user-attachments/assets/356971aa-3056-4628-8527-9736f3f27cb0)
+
+![news-ai-5](https://github.com/user-attachments/assets/a7aa5e54-738a-4877-8647-db8bf9ffcea3)
+
+![newsAI-2](https://github.com/user-attachments/assets/1a9ff291-81d6-475d-8bff-eddf7039186b)
 
 
-![WhatsApp Image 2025-07-16 at 13 32 32_343db9fc](https://github.com/user-attachments/assets/6888925e-bf9a-4ce6-9e53-9d85e111e0ce)
+![News-ai-3](https://github.com/user-attachments/assets/6934797b-27ba-4804-b098-20a34bb0eb30)
 
+![new-ai-4](https://github.com/user-attachments/assets/c00d64f7-2bd7-4d99-a01c-9410ea58fd9e)
 
-![WhatsApp Image 2025-07-16 at 13 33 05_ad448dfc](https://github.com/user-attachments/assets/a8b93ec2-a038-4e5c-a067-99a4a19a1464)
-
-
-![WhatsApp Image 2025-07-16 at 13 35 21_356d66e0](https://github.com/user-attachments/assets/fbc09916-0f28-4cd0-a065-b952cf477983)
+![news-ai-5](https://github.com/user-attachments/assets/e3827c36-169e-4b17-9565-fa5ec5136240)
 
 
 ## 📄 License
