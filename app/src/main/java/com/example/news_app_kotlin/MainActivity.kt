@@ -2,14 +2,20 @@ package com.example.news_app_kotlin
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.news_app_kotlin.adapter.NewsAdapter
 import com.example.news_app_kotlin.databinding.ActivityMainBinding
+import com.example.news_app_kotlin.utils.GeminiApiService
 import com.example.news_app_kotlin.viewmodel.NewsViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +24,17 @@ class MainActivity : AppCompatActivity() {
     private lateinit var newsAdapter: NewsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        lifecycleScope.launch {
+            try {
+                val summary = withContext(Dispatchers.IO) {
+                    GeminiApiService.generateSummary("Summarize: The earth revolves around the sun.")
+                }
+                Toast.makeText(this@MainActivity, "Gemini Summary: $summary", Toast.LENGTH_LONG).show()
+            } catch (e: Exception) {
+                Log.e("GeminiApiTest", "API Error", e)
+                Toast.makeText(this@MainActivity, "Gemini API Error: ${e.message}", Toast.LENGTH_LONG).show()
+            }
+        }
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
